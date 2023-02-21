@@ -1,0 +1,103 @@
+:root {
+  --light-purple: #666ca3;
+  --dark-purple: #13183f;
+  --grey: #83869a;
+  --hot-pink: #f74780;
+  --light-pink: #ffa7c3;
+  --white: #ffffff;
+  --gradient-one: #ff6f48;
+  --gradient-two: #f02aa6;
+  --gradient-three: #4851ff;
+  --gradient-four: #f02aa6;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+img {
+  width: 100%;
+}
+
+.container {
+  max-width: 1110px;
+  margin: 0 auto;
+}
+
+.btn {
+  color: var(--white);
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.btn-dark {
+  background: var(--dark-purple);
+  transition: all 0.2s ease;
+}
+.btn-dark:hover {
+  background: var(--grey);
+}
+.btn-primary {
+  background-image: linear-gradient(to bottom, var(--gradient-one), var(--gradient-two));
+
+  transition: all 0.2s ease;
+  padding: 1.25rem 3.25rem;
+}
+.btn-primary:hover {
+  opacity: 0.75;
+}
+
+/* Header */
+.header {
+  padding: 2rem;
+}
+
+.header .flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo-wrapper {
+  width: 9rem;
+}
+
+/* Showcase */
+.showcase {
+  padding: 2rem;
+}
+
+.showcase-content {
+  margin-bottom: 2rem;
+}
+
+.showcase-content h1 {
+  font-size: 4rem;
+  font-weight: 800;
+  color: var(--dark-purple);
+  margin-bottom: 2rem;
+}
+
+.showcase-content p {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: var(--grey);
+  line-height: 1.5;
+  margin-bottom: 2rem;
+}
